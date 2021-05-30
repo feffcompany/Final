@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :follow_requests
   resources :likes
   resources :photos
+  resources :polls
+  resources :votes
 
   get ":username" => "users#show", as: :user
   get ":username/liked" => "users#liked", as: :liked

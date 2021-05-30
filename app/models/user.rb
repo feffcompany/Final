@@ -60,6 +60,8 @@ class User < ApplicationRecord
 
   has_many :discover, through: :leaders, source: :liked_photos
 
+  has_many :own_polls, :class_name => "Poll", :foreign_key => "owner_id", :dependent => :destroy
+
   validates :username,
     presence: true,
     uniqueness: true,

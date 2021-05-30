@@ -83,3 +83,6 @@ group :development do
   gem 'skylight'
   gem 'web_git', github: 'firstdraft/web_git', branch: 'spring2020'
 end
+
+gem "carrierwave"
+gem "cloudinary"
