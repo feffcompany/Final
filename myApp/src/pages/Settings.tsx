@@ -13,19 +13,19 @@ import {play as playIcon} from 'ionicons/icons';
 import React, {useState } from 'react';
 import {Link} from 'react-router-dom'
 
-const Home: React.FC = () => {
+const Setting: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Settings</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        Go to <Link to="/settings">Settings</Link>
+        Go to <Link to="/Home">Home</Link>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Setting;
